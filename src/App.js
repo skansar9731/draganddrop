@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import DnDFlow from './Component/DnDFlow'
+// import AddNote from "./Component/AddNote"
+// import ReactFlowRenderer from './react-flow-renderer/index'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container-app'style={{height:"100vh"}}>
+      <DnDFlow />
+      {/* <AddNote/> */}
+      {/* <ReactFlowRenderer/> */}
     </div>
-  );
+  )
 }
-
-export default App;
